@@ -1,0 +1,53 @@
+#button1
+{
+    cursor: pointer;
+    background-color: bisque;
+}
+#button1:hover
+{
+    background-color: coral;
+}
+.cur{
+    cursor: pointer;
+    background-color: aquamarine ;
+    border-radius: 20px ;
+    margin: 20px ;
+    
+}
+.cur:hover{
+    background-color: coral;
+}
+.wrapper{
+    text-align: center ;
+}
+.numchoic{
+    background-color: red;
+    margin: 20px ;
+    border-radius: 20px;
+    cursor:pointer;
+}
+.numchoic:hover{
+    background-color: coral;
+}
+
+#a1{
+    background-color: cornflowerblue ;
+    color: darkblue ;
+}
+.GameLogo{
+    padding: 10px;
+    margin:  10px;
+    border-block-end-style: inset;
+    background-color: deeppink ;
+    font-family: fantasy ;
+    font-size: 50px ;
+    color:white ;
+    
+}
+.image{
+    margin: 10px;
+    width:300px ; 
+    height: 250px;
+    border-block-end-color: cadetblue ;
+    border-style: solid ;
+}

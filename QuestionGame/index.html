@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    </head>
+    <title>Question Game</title>
+    <link href="Art.css" rel="stylesheet">
+    </head>
+<body>
+    
+    <div class = "wrapper">
+        <center>
+    <div class="GameLogo">Comsci Style Bio Question</div>
+    <div id="a1" class="questionCSS"></div>
+    <div id="imag" class="image" ></div>
+    
+    <div id="button1" ></div>
+    <div id="ten" class="numchoic"></div>
+    <div id="2ten" class="numchoic"></div>
+    <div id="a1" class="questionCSS"></div>
+
+    
+    <div id="a2" class="cur"></div>
+    <div id="a3" class="cur"></div>
+    <div id="a4" class="cur"></div>
+    <div id="a5" class="cur"></div>
+    <div id="timeMor"></div>
+    <div id="homeButton" class="numchoic"></div>
+
+    <script src="jquery-3.3.1.min.js" charset="utf-8"></script>
+    <script>
+        var max1 ;
+        var loopTime ;
+        var sameQuestion=[];
+        var countq = null;
+        var array;
+        var readyGo = false ;
+        var point = 0;
+        var maxCount ;
+        var mytime ;
+        var totalTimeSpen = 0;
+
+        function getRandom(max){
+            let rand = Math.floor(Math.random() * Math.floor(max)); 
+            while (sameQuestion.includes(rand)){
+                rand = Math.floor(Math.random() * Math.floor(max));
+                console.log(rand);
+            }return rand;
+        }
+        $(document).ready(function(){
+            $.ajax({
+                url : 'Question_Answer.json',method :'GET' ,
+                dataType: 'json',
+                success : function(response){
+                array = response;
+            }
+            });
+        });
+        Home();
+        $('#imag').show()
+        $('#button1').click(function()
+        {
+            $('#a1').html('เลือกจำนวนข้อ').show()
+            $('#button1').hide()
+            $('#imag').hide()
+            $('#ten').show()
+            $('#2ten').show()
+            $('#ten').html('10')
+            $('#2ten').html('20')
+    
+            
+        });
+        function Home(){
+            point = 0 ;
+            sameQuestion = [];
+            totalTimeSpen = 0;
+            $('#button1').html('Start Game').show()
+            $('#ten').hide()
+            $('#2ten').hide()
+            $('#a1').hide()
+            $('#a2').hide()
+            $('#a3').hide()
+            $('#a4').hide()
+            $('#a5').hide()
+            $('#imag').css('content','url('+'http://www.roffeypark.com/wp-content/uploads2/shutterstock_95819110-revised-300x300.png'+')');
+            $('#timeMor').hide()
+            $('#homeButton').hide()
+            
+            
+            clearInterval(loopTime)
+        }
+        function countdown() {
+            $('#timeMor').html('15')
+            let n1 = $('#timeMor').html() - 1;
+            loopTime = setInterval(function() {
+                if (n1 >= 0) { 
+                    $('#timeMor').html(n1--);
+                }
+                else {
+                    if(countq>0){
+                    console.log('TimeOut')
+                    clearInterval(loopTime);
+                    callQ();
+                    }
+                    else {
+                        window.alert("ถูกทั้งหมด"+point+"ข้อ\n\nใช้เวลาไปทั้งหมด"+totalTimeSpen+'วินาที')
+                        Home()
+                        clearInterval(loopTime)
+                    }
+                }
+                }, 1000);
+                
+        }
+        
+        function MostTimeSpen(){
+            countDownTimespen = setInterval(function() {
+                totalTimeSpen++;
+                }, 1000);
+        }
+
+        function callQ(){
+            countq = countq -1;
+            
+            // console.log(point+"แต้ม");
+            // console.log("เหลือ"+countq+"ข้อ");
+            
+            $('#button1').hide()
+            $('#ten').hide()
+            $('#2ten').hide()
+            if (sameQuestion.length<max1){
+                n = getRandom(20);
+                console.log(n)
+                sameQuestion.push(n);
+            
+            $('#a1').show()
+            $('#a2').show()
+            $('#a3').show()
+            $('#a4').show()
+            $('#a5').show()
+            $('#imag').show()
+            $('#timeMor').show()
+            $('#homeButton').show()
+                $('#a1').html("ข้อที่ "+(maxCount-countq)+" "+array[n]['question'])
+                $('#imag').show();
+                $('#imag').css('content','url(' +array[n]["bannerImg1"]+ ')');
+                $('#a2').html(array[n]['option1'])
+                $('#a3').html(array[n]['option2'])
+                $('#a4').html(array[n]['option3'])
+                $('#a5').html(array[n]['option4'])
+                $('#homeButton').html('ยอมแพ้แล้วกลับหน้าแรกดีกว่า')
+                console.log(totalTimeSpen+'dd')
+                countdown();
+                //timeingQ()
+            }
+        }
+        $('#ten').click(function(){
+            MostTimeSpen();
+            countq = 10;
+            maxCount = 10;
+            max1 = 10;
+            callQ() ;
+        });
+        $('#2ten').click(function(){
+            MostTimeSpen();
+            countq = 20;
+            maxCount = 20;
+            max1 =20;
+            callQ();
+        });
+        $('#homeButton').click(function(){
+            if(confirm('ยอมแล้ว เกมส์กากเกิน')){
+                Home()
+                clearInterval(countDownTimespen)
+            }else 
+                
+                alert('สู้ๆอีก'+ countq +'ข้อเอง');
+            
+            
+            
+        });
+        $('.cur').click(function(){
+        if (countq > 0){
+            if ($(this).html()==array[n]['answer']){
+                // console.log("GG")
+                point=point+1;
+                console.log('True')
+                clearInterval(loopTime)
+                //$('#timeMor').html('')
+                
+                callQ();
+                
+            }
+            else {
+                console.log("False")
+                clearInterval(loopTime)
+                //$('#timeMor').html('')
+                
+                callQ();
+            }
+        }
+        else {
+            clearInterval(countDownTimespen)
+            window.alert("ถูกทั้งหมด"+point+"ข้อ\n\nใช้เวลาไปทั้งหมด"+totalTimeSpen+'วินาที')
+            Home();
+        }
+        })
+        
+    </script>
+    </center>
+    </div>
+</body>
+</html>

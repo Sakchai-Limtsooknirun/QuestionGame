@@ -1,0 +1,168 @@
+[{
+	"question": "The first mechanical computer designed by Charles Babbage was called ?",
+	"option1": "1) Abacus",
+	"option2": "2) Analytical Engine",
+	"option3": "3)Calculator",
+	"option4": "4) Processor",
+	"answer": "2) Analytical Engine",
+	"bannerImg1" : "https://d1o50x50snmhul.cloudfront.net/wp-content/uploads/2010/12/mg20827915.500-1_300.jpg"
+}, {
+	"question": "Which of the following is the most powerful type of computer ?",
+	"option1": "1) Super-micro",
+	"option2": "2) Super conductor",
+	"option3": "3) Super computer",
+	"option4": "4) Megaframe",
+	"answer": "3) Super computer",
+	"bannerImg1" : "http://3.bp.blogspot.com/_LwBTSaW8u9s/TTSYAevDNOI/AAAAAAAAACQ/q_Tg-zQh9Ak/s1600/1274132334_13fa676fa3bc3.jpeg"
+}, {
+	"question": "Which is a single integrated circuit?",
+	"option1": "1) Gate",
+	"option2": "2) Mother Board",
+	"option3": "3) Chip",
+	"option4": "4) CPU",
+	"answer": "1) Gate" ,
+	"bannerImg1" : "https://vignette.wikia.nocookie.net/1991-new-world-order/images/8/80/Three_IC_circuit_chips.JPG/revision/latest?cb=20160615221023"
+}, {
+	"question": "C is ?",
+	"option1": "1) A third generation high level language",
+	"option2": "2) A machine language",
+	"option3": "3) An assembly language",
+	"option4": "4) All of the above",
+	"answer": "1) A third generation high level language",
+	"bannerImg1" : "http://www.tvlap.com/images/C-lan.png"
+}, {
+	"question": "Web pages are written using ?",
+	"option1": "1) FTP",
+	"option2": "2) HTTP",
+	"option3": "3) HTML",
+	"option4": "4) URL",
+	"answer": "3) HTML",
+	"bannerImg1" : "http://www.techclinch.com/wp-content/uploads/2015/10/s.jpg"
+}, {
+	"question": "Graphic interfaces were first used in a xerox product is called ?",
+	"option1": "1) Ethernet",
+	"option2": "2) Inter LISP",
+	"option3": "3) Small talk",
+	"option4": "4) Zeta LISP",
+	"answer": "1) Ethernet",
+	"bannerImg1" : "https://s-media-cache-ak0.pinimg.com/originals/b4/8d/02/b48d0217243ba263390ad61519199d61.jpg"
+}, {
+	"question": "Find the odd one out ?",
+	"option1": "1) ORACLE",
+	"option2": "2) SYBASE",
+	"option3": "3) C",
+	"option4": "4) INFORMIX",
+	"answer": "3) C",
+	"bannerImg1" : "https://www.oracle.com/us/assets/cw54-about-2868437.jpg"
+}, {
+	"question": "The ------ is the administrative section of the computer system?",
+	"option1": "1) Memory Unit",
+	"option2": "2) Input Unit",
+	"option3": "3) Central Processing Unit",
+	"option4": "4) Control Unit",
+	"answer": "3) Central Processing Unit",
+	"bannerImg1" : "http://www.propproperty.com/files/pics/hardware.jpg"
+},
+{
+	"question": "กล้ามเนื้อหัวใจห้องใดจำเป็นต้องมีแรงบีบมากที่สุด",
+	"option1": "1) ห้องบนขวา",
+	"option2": "2) ห้องล่างขวา",
+	"option3": "3) ห้องบนซ้าย",
+	"option4": "4) ห้องล่างซ้าย",
+	"answer": "4) ห้องล่างซ้าย",
+	"bannerImg1" : "http://www.paolohospital.com/phahol/wp-content/uploads/2017/07/heart-anatomy.jpg"
+}, {
+	"question": "เลือดออกจากหัวใจล่างซ้ายไปที่ใด",
+	"option1": "1) ปอด",
+	"option2": "2) หัวใจห้องบนซ้าย",
+	"option3": "3) ส่วนต่างๆของร่างกาย",
+	"option4": "4) หัวใจห้องล่างขวา",
+	"answer": "3) ส่วนต่างๆของร่างกาย",
+	"bannerImg1" : "https://2.bp.blogspot.com/-_jOhRnbglmc/VtwCctlaViI/AAAAAAAAAGo/cAgLx4gkR_w/s1600/vsd.gif"
+}, {
+	"question": "เลือดที่มีสีดำแสดงว่ามีแก๊สอะไรอยู่มาก",
+	"option1": "1) คาร์บอนมอนอกไซด์",
+	"option2": "2) ออกซิเจน",
+	"option3": "3) คาร์บอนไดออกไซด์",
+	"option4": "4) ไนโตรเจน",
+	"answer": "3) คาร์บอนไดออกไซด์",
+	"bannerImg1" : "http://cdn-th.tunwalai.net/files/profile/157302/157302-member.jpg"
+}, {
+	"question": "สัตว์ชนิดใดมีหัวใจ 2 ห้อง",
+	"option1": "1) จระเข้",
+	"option2": "2) แมว",
+	"option3": "3) ไฮดรา",
+	"option4": "4) ม้าน้ำ",
+	"answer": "4) ม้าน้ำ",
+	"bannerImg1" : "http://extreamrock.weebly.com/uploads/4/7/4/8/47487113/7773466.jpg"
+}, {
+	"question": "อะไรที่ระบบหมุนเวียนเลือดแบบเปิดมีแต่แบบปิดไม่มี",
+	"option1": "1) หัวใจ",
+	"option2": "2) เส้นเลือดดำ",
+	"option3": "3) เส้นเลือดฝอย",
+	"option4": "4) เส้นเลือดแดง",
+	"answer": "3) เส้นเลือดฝอย",
+	"bannerImg1" : "https://image.slidesharecdn.com/random-131203055422-phpapp02/95/-27-638.jpg?cb=1386050415"
+}, {
+	"question": "ลิ้นหัวใจที่กั้นระหว่างห้องบนซ้ายและห้องล่างซ้ายเรียกว่า",
+	"option1": "1) ไตรคัสปิด",
+	"option2": "2) เออออร์ตา",
+	"option3": "3) ไบคัสปิด",
+	"option4": "4) เวนตริเคิล",
+	"answer": "3) ไบคัสปิด",
+	"bannerImg1" : "https://sites.google.com/a/hatyaiwit.ac.th/circulatory-system/_/rsrc/1512456252190/the-circulatory-system-and-its-components/hawci-heart/lin-hawci-heart-valve/heart-valve1.jpg"
+}, {
+	"question": "เลือดมีส่วนที่เป็นของเหลวกี่ %",
+	"option1": "1) 35",
+	"option2": "2) 45",
+	"option3": "3) 55",
+	"option4": "4) 65",
+	"answer": "3) 55",
+	"bannerImg1"  : "http://www.thaihealth.or.th/data/content/2015/05/28231/cms/thaihealth_c_acdehnuwx127.jpg"
+}, {
+	"question": "อะไรไม่ใช่หน้าที่ของเซลล์เม็ดเลือดแดง",
+	"option1": "1) ลำเลียงแก๊สออกซิเจน",
+	"option2": "2) ผลิตแอนติบอดี้",
+	"option3": "3) ลำเลียงของยูเรีย",
+	"option4": "4) ลำเลียงน้ำ",
+	"answer": "2) ผลิตแอนติบอดี้",
+	"bannerImg1" : "https://brandinside.asia/wp-content/uploads/2017/07/blood-02.jpg"
+}, {
+	"question": "เกล็ดเลือดมีอายุกี่วัน",
+	"option1": "1) 110",
+	"option2": "2) 120",
+	"option3": "3) 7",
+	"option4": "4) 4",
+	"answer":  "4) 4",
+	"bannerImg1" : "http://2xkcvt35vyxycuy7x23e0em1a5g.wpengine.netdna-cdn.com/wp-content/uploads/2015/08/the-HIV-AIDS-HEALTH-BLOOD-LUKEMIA-Pandemic.jpg"
+}, {
+	"question": "อวัยวะในข้อใดต่อไปนี้ไม่ได้มีหน้าที่สร้างเลือด",
+	"option1": "1) ม้าม",
+	"option2": "2) ไขกระดูก ",
+	"option3": "3) ตับ",
+	"option4": "4) ต่อมน้ำเหลือง",
+	"answer": "3) ตับ",
+	"bannerImg1" : "http://haamor.com/media/images/articlepics/%E0%B9%82%E0%B8%A3%E0%B8%84%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%94-01.jpg"
+
+},{
+	"question": "ข้อใดจัดเป็นทรัพยากรธรรมชาติที่หมุนเวียนได้",
+	"option1": "1) คน สัตว์ ต้นไม้",
+	"option2": "2) ดิน ปูนซีเมนต์ กระดาษ",
+	"option3": "3) ดิน น้ำ ต้นไม้",
+	"option4": "4) อากาศ น้ำ แร่ธาตุ",
+	"answer": "3) ดิน น้ำ ต้นไม้",
+	"bannerImg1" : "http://s.isanook.com/hm/0/ud/2/10801/mainh.jpg"
+},{
+	"question": "ข้อใดต่อไปนี้จัดเป็นทรัพยากรธรรมชาติที่ใช้แล้วสิ้นเปลืองหรือมดสิ้นไปได้",
+	"option1": "1) แร่ธาตุ",
+	"option2": "2) แสงแดด",
+	"option3": "3) น้ำ",
+	"option4": "4) ป่าไม้",
+	"answer": "1) แร่ธาตุ",
+	"bannerImg1" : "http://4.bp.blogspot.com/-wrg97tkgjwE/UG3zD1ym7cI/AAAAAAAAACE/5IRx7V5rpz8/s1600/070905B_03.jpg"
+
+}
+]
+
+
+
